@@ -18,4 +18,17 @@ func main() {
 	for i, v := range s {
 		fmt.Printf("%d %c\n", i, v)
 	}
+
+	sw := "a"
+	switch sw {
+	case "a":
+		fmt.Println("a")
+		fallthrough
+	case "b":
+		fmt.Println("b")
+	case "c":
+		fmt.Println("c")
+	default:
+		fmt.Println("...")
+	}
 }
