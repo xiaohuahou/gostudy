@@ -36,6 +36,7 @@ func f6(x, y int) int {
 func main() {
 	//1. &
 	//2. *
+	//go 指针只能读不能修改
 	n := 18
 	fmt.Println(&n)
 

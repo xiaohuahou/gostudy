@@ -40,6 +40,8 @@ func main() {
 	//append
 	c3 := []string{"bj", "sh", "sz"}
 	// c3[3] = "gz" 越界
+	//append 会自动扩容
+	//copy 不会 要用make
 	c3 = append(c3, "gz")
 	fmt.Println(c3)
 	cc := []string{"wh", "xa", "sz"}
