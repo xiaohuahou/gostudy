@@ -55,8 +55,8 @@ func funcA() {
 }
 func funcB() {
 	defer func() {
-		err := recover()
-		fmt.Println(err)
+		// err := recover()
+		// fmt.Println(err)
 		fmt.Println("释放数据库连接。。。")
 	}()
 	panic("出现了严重的错误")
