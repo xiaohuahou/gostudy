@@ -55,8 +55,8 @@ func funcA() {
 }
 func funcB() {
 	defer func() {
-		// err := recover()
-		// fmt.Println(err)
+		err := recover()
+		fmt.Println(err)
 		fmt.Println("释放数据库连接。。。")
 	}()
 	panic("出现了严重的错误")
@@ -79,14 +79,14 @@ func main() {
 	ret3 := ret(200)
 	fmt.Println(ret3)
 
-	a := 1
-	b := 2
+	// a := 1
+	// b := 2
 	//只defer 一层
 	//a为参数入栈是的值 不是最后defer执行时的值
-	defer calc("1", a, calc("10", a, b))
-	a = 0
-	defer calc("2", a, calc("20", a, b))
-	b = 1
+	// defer calc("1", a, calc("10", a, b))
+	// a = 0
+	// defer calc("2", a, calc("20", a, b))
+	// b = 1
 
 	//panic and recover
 	funcA()
