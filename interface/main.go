@@ -43,7 +43,7 @@ func assign(a interface{}) {
 	switch t:=a.(type) {
 	case string:
 		fmt.Println("是一个字符串"，t)
-	case string:
+	case int:
 		fmt.Println("是一个int"，t)
 	}
 

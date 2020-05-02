@@ -12,6 +12,7 @@ func main() {
 		fmt.Printf("open file fialed, %v\n", err)
 		return
 	}
+	//一定要写在这个地方 err有值 f为0值
 	defer f.Close()
 
 	var tmp [128]byte
